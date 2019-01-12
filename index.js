@@ -8,5 +8,5 @@ app.get('/', (req, res) =>
 );
 
 app.listen(PORT, () =>
-    console.log("Your server is running on port")
+    console.log("Your server is running on pot test")
 );
