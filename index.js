@@ -9,7 +9,7 @@ app.get(‘/’, function (req, res) {
 });
 //listen to port 3000 by default
 app.listen(PORT, () =>
-          console.log("Server running ")
+          console.log("Server is Guru running ")
 );
  
 module.exports = app;
