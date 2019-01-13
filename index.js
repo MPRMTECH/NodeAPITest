@@ -1,12 +1,12 @@
-import express from 'express';
-
-const app = express();
-const PORT = 3000;
-
-app.get('/', (req, res) =>
-    res.send("Node and express server is running")
-);
-
-app.listen(PORT, () =>
-    console.log("Your server is running on pot guru test")
-);
+//importing node framework
+var express = require(‘express’);
+ 
+var app = express();
+//Respond with "hello world" for requests that hit our root "/"
+app.get(‘/’, function (req, res) {
+ res.send(‘hello world’);
+});
+//listen to port 3000 by default
+app.listen(process.env.PORT || 3000);
+ 
+module.exports = app;
